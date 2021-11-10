@@ -7,7 +7,7 @@ namespace ConditionalConstructions
         static void Main(string[] args)
         {
             
-           /*
+           
             Console.WriteLine("Exercise 1");
 
             // First Task
@@ -175,7 +175,7 @@ namespace ConditionalConstructions
 
             Console.WriteLine($"Sum of first two numbers equal to sum of two numbers is {firstNumberOfEnteredNumber + secondNumberOfEnteredNumber == thirdNumberOfEnteredNumber + fourthNumberOfEnteredNumber}");
             Console.WriteLine("");
-            */
+            
             // Third Exercise
             Console.WriteLine("Exercise 3");
             // First Task
@@ -223,12 +223,16 @@ namespace ConditionalConstructions
                     continue;
                 }
             }
-            
+            Console.WriteLine("");
+
+            // Third Task
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter a x.xxxx number ");
             double thirdTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
+
             thirdTaskDoudleNum = thirdTaskDoudleNum / 0.0001;
             thirdTaskDoudleNum = thirdTaskDoudleNum % 10000;
+
             int num11 = Convert.ToInt32(thirdTaskDoudleNum);
             int firNumTooSum = 0;
             int secNumTooSum = 0;
@@ -246,51 +250,35 @@ namespace ConditionalConstructions
                     secNumTooSum = num2;
                 }
             }
-            if( firNumTooSum == secNumTooSum)
-            {
-                Console.WriteLine("equal");
-            }
-            else
-            {
-                Console.WriteLine("not equal");
-            }
-            
-            Console.WriteLine("Exercise 4");
-            Console.WriteLine("Task 1");
+            Console.WriteLine($"Its {firNumTooSum == secNumTooSum} that they are equal");
+            Console.WriteLine("");
 
+            // Fourth Exercise 
+            Console.WriteLine("Exercise 4");
+
+            // First Task
+            Console.WriteLine("Task 1");
+            Console.WriteLine("Enter year number");
             int year = Convert.ToInt32(Console.ReadLine());
-            bool vYear;
-            year = year % 4;
-            if(year == 0)
-            {
-                Console.WriteLine(vYear = true);
-            }
-            else
-            {
-                Console.WriteLine(vYear = false);
-            }
-            
+
+            Console.WriteLine($"This leap year is {year % 4 == 0}");
+            Console.WriteLine("");
+
+            // Second Task
             Console.WriteLine("Task 2");
             int x = Convert.ToInt32(Console.ReadLine());
             int y = Convert.ToInt32(Console.ReadLine());
             int z = Convert.ToInt32(Console.ReadLine());
-            bool eqOrNot;
 
-            if( x == y && y == z)
-            {
-                Console.WriteLine(eqOrNot = true);
-            }
-            else
-            {
-                Console.WriteLine(eqOrNot = false);
-            }
-            
+            Console.WriteLine($"They are equal is {x == y && y == z}");
+            Console.WriteLine("");
+
+            // Third Task
             Console.WriteLine("Task 3");
 
             int task3X = Convert.ToInt32(Console.ReadLine());
             int task3Y = Convert.ToInt32(Console.ReadLine());
             int task3Z = Convert.ToInt32(Console.ReadLine());
-            bool positive;
             int count1 = 0;
             
             if(task3X > 0)
@@ -305,16 +293,13 @@ namespace ConditionalConstructions
             {
                 count1++;
             }
-            if( count1 == 1)
-            {
-                Console.WriteLine(positive = true);
-            }
-            else
-            {
-                Console.WriteLine(positive = false);
-            }
-            
+            Console.WriteLine(count1 == 1);
+            Console.WriteLine("");
+
+            // Fifth Exercise 
             Console.WriteLine("Exercise 5");
+
+            // First Task
             Console.WriteLine("Task 1");
 
             int task1X = Convert.ToInt32(Console.ReadLine());
