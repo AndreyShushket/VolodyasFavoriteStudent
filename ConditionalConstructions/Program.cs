@@ -16,12 +16,12 @@ namespace ConditionalConstructions
 
             try
             {
-                int firstTaskNumber = Convert.ToInt32(Console.ReadLine());
-                if (firstTaskNumber % 2 == 0)
+                int firstTaskEnteredNumber = Convert.ToInt32(Console.ReadLine());
+                if (firstTaskEnteredNumber % 2 == 0)
                 {
                     Console.WriteLine("This number is even");
                 }
-                else if (firstTaskNumber % 2 == 1)
+                else if (firstTaskEnteredNumber % 2 == 1)
                 {
                     Console.WriteLine("This number is not even");
                 }
@@ -77,39 +77,39 @@ namespace ConditionalConstructions
             // Third Task
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter number a");
-            int thirdTaskNumA = Convert.ToInt32(Console.ReadLine());
+            int thirdTaskNumberA = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter number b");
-            int thirdTaskNumB = Convert.ToInt32(Console.ReadLine());
+            int thirdTaskNumberB = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter number c");
-            int thirdTaskNumC = Convert.ToInt32(Console.ReadLine());
+            int thirdTaskNumberC = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Expression a < b < c is {thirdTaskNumA < thirdTaskNumB && thirdTaskNumB < thirdTaskNumC}");
-            Console.WriteLine($"Expression b > a > c is {thirdTaskNumB > thirdTaskNumA && thirdTaskNumA > thirdTaskNumC}");
+            Console.WriteLine($"Expression a < b < c is {thirdTaskNumberA < thirdTaskNumberB && thirdTaskNumberB < thirdTaskNumberC}");
+            Console.WriteLine($"Expression b > a > c is {thirdTaskNumberB > thirdTaskNumberA && thirdTaskNumberA > thirdTaskNumberC}");
             
             
             //Fourth Task
             Console.WriteLine("Task 4");
-            Console.WriteLine("Enter string on russin");
+            Console.WriteLine("Enter string on russian");
             // Dont understand how can i combine 96 and 97 line
-            string fourthTaskString = Console.ReadLine();
-            Console.WriteLine($"String contain тест is {fourthTaskString.Contains("тест")}");
+            string russianTestEnteredString = Console.ReadLine();
+            Console.WriteLine($"String contain тест is {russianTestEnteredString.Contains("тест")}");
 
             Console.WriteLine("");
             
             //Fifth Task
             Console.WriteLine("Task 5");
             Console.WriteLine("Enter string Ru or En");
-            string fifhTaskString = Console.ReadLine();
+            string fifhtTaskEnteredString = Console.ReadLine();
             string enString = "qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAPOIUYTREWQ";
             string ruString = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
 
-            if (enString.Contains(fifhTaskString[0]))
+            if (enString.Contains(fifhtTaskEnteredString[0]))
             {
                 Console.WriteLine("Brest");
             }
-            else if (ruString.Contains(fifhTaskString[0]))
+            else if (ruString.Contains(fifhtTaskEnteredString[0]))
             {
                 Console.WriteLine("Брест");
             }
@@ -122,8 +122,8 @@ namespace ConditionalConstructions
             //Sixth Task
             Console.WriteLine("Task 6");
             Console.WriteLine("Enter number ");
-            int sixthTaskNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(sixthTaskNumber % 8 == 0 ? "correct" : "incorrect");
+            int sixthTaskEnteredNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(sixthTaskEnteredNumber % 8 == 0 ? "correct" : "incorrect");
             Console.WriteLine("");
             
             // Second Exercise
@@ -132,27 +132,27 @@ namespace ConditionalConstructions
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter xxxx number");
 
-            int firstTaskNum = Convert.ToInt32(Console.ReadLine());
+            int enteredNumberWithFourDigits = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < 4; i++)
             {
-                Console.Write(firstTaskNum % 10);
-                firstTaskNum /= 10;
+                Console.Write(enteredNumberWithFourDigits % 10);
+                enteredNumberWithFourDigits /= 10;
             }
             Console.WriteLine("");
             
             // Second Task
             Console.WriteLine("Task 2");
             Console.WriteLine("Enter xxxx number");
-            int secondTaskNum = Convert.ToInt32(Console.ReadLine());
+            int secondTaskNumer = Convert.ToInt32(Console.ReadLine());
             int count = 0;
 
             for (int i = 0; i < 4; i++)
             {
-                int secondTaskSecNum = secondTaskNum % 10;
-                secondTaskNum /= 10;
+                int secondTaskSecondNumber = secondTaskNumer % 10;
+                secondTaskNumer /= 10;
 
-                if (secondTaskSecNum == 7)
+                if (secondTaskSecondNumber == 7)
                 {
                     count++;
                 }   
@@ -164,14 +164,14 @@ namespace ConditionalConstructions
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter xxxx number");
 
-            int thirdTaskNum = Convert.ToInt32(Console.ReadLine());
-            int firstNumberOfEnteredNumber = thirdTaskNum % 10;
-            thirdTaskNum /= 10;
-            int secondNumberOfEnteredNumber = thirdTaskNum % 10; ;
-            thirdTaskNum /= 10;
-            int thirdNumberOfEnteredNumber = thirdTaskNum % 10; ;
-            thirdTaskNum /= 10;
-            int fourthNumberOfEnteredNumber = thirdTaskNum;
+            int thirdTaskNumber = Convert.ToInt32(Console.ReadLine());
+            int firstNumberOfEnteredNumber = thirdTaskNumber % 10;
+            thirdTaskNumber /= 10;
+            int secondNumberOfEnteredNumber = thirdTaskNumber % 10; ;
+            thirdTaskNumber /= 10;
+            int thirdNumberOfEnteredNumber = thirdTaskNumber % 10; ;
+            thirdTaskNumber /= 10;
+            int fourthNumberOfEnteredNumber = thirdTaskNumber;
 
             Console.WriteLine($"Sum of first two numbers equal to sum of two numbers is {firstNumberOfEnteredNumber + secondNumberOfEnteredNumber == thirdNumberOfEnteredNumber + fourthNumberOfEnteredNumber}");
             Console.WriteLine("");
@@ -182,14 +182,14 @@ namespace ConditionalConstructions
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter a x.xxxxx number ");
 
-            double firstTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
-            firstTaskDoudleNum = firstTaskDoudleNum / 0.00001;
-            firstTaskDoudleNum = firstTaskDoudleNum % 100000;
-            int num = Convert.ToInt32(firstTaskDoudleNum);
+            double firstTaskDoudleNumber = Convert.ToDouble(Console.ReadLine());
+            firstTaskDoudleNumber = firstTaskDoudleNumber / 0.00001;
+            firstTaskDoudleNumber = firstTaskDoudleNumber % 100000;
+            int fiveNumberAfterPoint = Convert.ToInt32(firstTaskDoudleNumber);
             for(int i = 0; i < 5; i++)
             {
-                int num2 = num % 10;
-                num /= 10;
+                int num2 = fiveNumberAfterPoint % 10;
+                fiveNumberAfterPoint /= 10;
                 if( num2 == 0)
                 {
                     Console.WriteLine("have 0");
@@ -208,11 +208,11 @@ namespace ConditionalConstructions
             double secondTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
             secondTaskDoudleNum = secondTaskDoudleNum / 0.0001;
             secondTaskDoudleNum = secondTaskDoudleNum % 10000;
-            int num1 = Convert.ToInt32(secondTaskDoudleNum);
+            int fourNumberAfterPoint = Convert.ToInt32(secondTaskDoudleNum);
             for (int i = 0; i < 4; i++)
             {
-                int num2 = num1 % 10;
-                num1 /= 10;
+                int num2 = fourNumberAfterPoint % 10;
+                fourNumberAfterPoint /= 10;
                 if (num2 == 9)
                 {
                     Console.WriteLine("have 9");
@@ -228,14 +228,14 @@ namespace ConditionalConstructions
             // Third Task
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter a x.xxxx number ");
-            double thirdTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
+            double thirdTaskDoudleNumber = Convert.ToDouble(Console.ReadLine());
 
-            thirdTaskDoudleNum = thirdTaskDoudleNum / 0.0001;
-            thirdTaskDoudleNum = thirdTaskDoudleNum % 10000;
+            thirdTaskDoudleNumber = thirdTaskDoudleNumber / 0.0001;
+            thirdTaskDoudleNumber = thirdTaskDoudleNumber % 10000;
 
-            int num11 = Convert.ToInt32(thirdTaskDoudleNum);
-            int firNumTooSum = 0;
-            int secNumTooSum = 0;
+            int num11 = Convert.ToInt32(thirdTaskDoudleNumber);
+            int firstNumberToSum = 0;
+            int secondNumberToSum = 0;
 
             for (int i = 0; i < 4; i++)
             {
@@ -243,14 +243,14 @@ namespace ConditionalConstructions
                 num11 /= 10;
                 if(i == 0)
                 {
-                    firNumTooSum = num2;
+                    firstNumberToSum = num2;
                 }
                 if(i == 3)
                 {
-                    secNumTooSum = num2;
+                    secondNumberToSum = num2;
                 }
             }
-            Console.WriteLine($"Its {firNumTooSum == secNumTooSum} that they are equal");
+            Console.WriteLine($"Its {firstNumberToSum == secondNumberToSum} that they are equal");
             Console.WriteLine("");
 
             // Fourth Exercise 
