@@ -6,7 +6,7 @@ namespace ConditionalConstructions
     {
         static void Main(string[] args)
         {
-            /*
+            
             Console.WriteLine("Exercise 1");
 
             // First Task
@@ -93,13 +93,11 @@ namespace ConditionalConstructions
             string russianTestEnteredString = Console.ReadLine();
             Console.WriteLine($"String contain тест is {russianTestEnteredString.Contains("тест")}");
             Console.WriteLine("");
-            */
+            
             //Fifth Task
             Console.WriteLine("Task 5");
             Console.WriteLine("Enter string Ru or En");
             string fifhtTaskEnteredString = Console.ReadLine();
-            string enString = "qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAPOIUYTREWQ";
-            string ruString = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
 
             if (fifhtTaskEnteredString.Equals("En"))
             {
@@ -114,7 +112,7 @@ namespace ConditionalConstructions
                 Console.WriteLine("Unknown symbols");
             }
             Console.WriteLine("");
-            /*
+            
             //Sixth Task
             Console.WriteLine("Task 6");
             Console.WriteLine("Enter number ");
@@ -317,7 +315,7 @@ namespace ConditionalConstructions
                 task1Y = per;
             }
             Console.WriteLine($"{task1X}, {task1Y}, {task1Z}"); 
-            */
+            
         }
     }
 }
