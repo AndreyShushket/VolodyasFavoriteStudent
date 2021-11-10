@@ -7,7 +7,7 @@ namespace ConditionalConstructions
         static void Main(string[] args)
         {
             Console.WriteLine("Exercise 1");
-            /*
+            
             // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter the number");
@@ -250,11 +250,11 @@ namespace ConditionalConstructions
             double secondTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
             secondTaskDoudleNum = secondTaskDoudleNum / 0.0001;
             secondTaskDoudleNum = secondTaskDoudleNum % 10000;
-            int num = Convert.ToInt32(secondTaskDoudleNum);
+            int num1 = Convert.ToInt32(secondTaskDoudleNum);
             for (int i = 0; i < 4; i++)
             {
-                int num2 = num % 10;
-                num /= 10;
+                int num2 = num1 % 10;
+                num1 /= 10;
                 if (num2 == 9)
                 {
                     Console.WriteLine("have 9");
@@ -271,14 +271,14 @@ namespace ConditionalConstructions
             double thirdTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
             thirdTaskDoudleNum = thirdTaskDoudleNum / 0.0001;
             thirdTaskDoudleNum = thirdTaskDoudleNum % 10000;
-            int num = Convert.ToInt32(thirdTaskDoudleNum);
+            int num11 = Convert.ToInt32(thirdTaskDoudleNum);
             int firNumTooSum = 0;
             int secNumTooSum = 0;
 
             for (int i = 0; i < 4; i++)
             {
-                int num2 = num % 10;
-                num /= 10;
+                int num2 = num11 % 10;
+                num11 /= 10;
                 if(i == 0)
                 {
                     firNumTooSum = num2;
@@ -333,21 +333,21 @@ namespace ConditionalConstructions
             int task3Y = Convert.ToInt32(Console.ReadLine());
             int task3Z = Convert.ToInt32(Console.ReadLine());
             bool positive;
-            int count = 0;
+            int count1 = 0;
             
             if(task3X > 0)
             {
-                count++;
+                count1++;
             }
             if(task3Y > 0)
             {
-                count++;
+                count1++;
             }
             if(task3Z > 0)
             {
-                count++;
+                count1++;
             }
-            if( count == 1)
+            if( count1 == 1)
             {
                 Console.WriteLine(positive = true);
             }
@@ -355,7 +355,7 @@ namespace ConditionalConstructions
             {
                 Console.WriteLine(positive = false);
             }
-            */
+            
             Console.WriteLine("Exercise 5");
             Console.WriteLine("Task 1");
 
@@ -383,6 +383,7 @@ namespace ConditionalConstructions
                 task1Y = per;
             }
             Console.WriteLine($"{task1X}, {task1Y}, {task1Z}");
+
 
         }
     }
