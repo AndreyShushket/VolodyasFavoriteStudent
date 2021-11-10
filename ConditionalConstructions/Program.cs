@@ -6,60 +6,74 @@ namespace ConditionalConstructions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Exercise 1");
             
+           /*
+            Console.WriteLine("Exercise 1");
+
             // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter the number");
-            int firstTaskNumber = Convert.ToInt32(Console.ReadLine());
 
-            int evenOrNot = firstTaskNumber % 2;
-            if (evenOrNot == 0)
+            try
             {
-                Console.WriteLine("This number is even");
+                int firstTaskNumber = Convert.ToInt32(Console.ReadLine());
+                if (firstTaskNumber % 2 == 0)
+                {
+                    Console.WriteLine("This number is even");
+                }
+                else if (firstTaskNumber % 2 == 1)
+                {
+                    Console.WriteLine("This number is not even");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid value entered");
+                }
             }
-            else if (evenOrNot == 1)
-            {
-                Console.WriteLine("This number is not even");
-            }
-            else
+            catch
             {
                 Console.WriteLine("Invalid value entered");
             }
             Console.WriteLine("");
-
+            
             // Second Task
             Console.WriteLine("Task 2");
             Console.WriteLine("Enter the mounth number");
+            int mounthNumber = Convert.ToInt32(Console.ReadLine());
 
-            int MounthNumber = Convert.ToInt32(Console.ReadLine());
-
-            if (MounthNumber >= 1 && MounthNumber <= 2)
+            switch(mounthNumber)
             {
-                Console.WriteLine("Winter");
-            }
-            else if ( MounthNumber >= 3 && MounthNumber <= 5)
-            {
-                Console.WriteLine("Spring");
-            }
-            else if (MounthNumber >= 6 && MounthNumber <= 8 )
-            {
-                Console.WriteLine("Summer");
-            }
-            else if (MounthNumber >= 9 && MounthNumber <= 11)
-            {
-                Console.WriteLine("Autumn");
-            }
-            else if (MounthNumber == 12)
-            {
-                Console.WriteLine("Winter");
-            }
-            else
-            {
-                Console.WriteLine("Invalid number");
+                case 1:
+                    Console.WriteLine("Winter");
+                    break;
+                case 2:
+                    goto case 1;
+                case 3:
+                    Console.WriteLine("Spring");
+                    break;
+                case 4:
+                    goto case 3;
+                case 5:
+                    goto case 3;
+                case 6:
+                    Console.WriteLine("Summer");
+                    break;
+                case 7:
+                    goto case 6;
+                case 8:
+                    goto case 6;
+                case 9:
+                    Console.WriteLine("Fall");
+                    break;
+                case 10:
+                    goto case 9;
+                case 11:
+                    goto case 9;
+                case 12:
+                    goto case 1;
             }
             Console.WriteLine("");
-
+            
             // Third Task
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter number a");
@@ -71,49 +85,31 @@ namespace ConditionalConstructions
             Console.WriteLine("Enter number c");
             int thirdTaskNumC = Convert.ToInt32(Console.ReadLine());
 
-            if (thirdTaskNumA < thirdTaskNumB && thirdTaskNumB < thirdTaskNumC )
-            {
-                Console.WriteLine("Expression a < b < c is true");
-            }
-            else if ( thirdTaskNumB > thirdTaskNumA && thirdTaskNumA > thirdTaskNumC)
-            {
-                Console.WriteLine("expression b > a > c is true");
-            }
-            else
-            {
-                Console.WriteLine("None of it true");
-            }
-            Console.WriteLine("");
+            Console.WriteLine($"Expression a < b < c is {thirdTaskNumA < thirdTaskNumB && thirdTaskNumB < thirdTaskNumC}");
+            Console.WriteLine($"Expression b > a > c is {thirdTaskNumB > thirdTaskNumA && thirdTaskNumA > thirdTaskNumC}");
+            
             
             //Fourth Task
             Console.WriteLine("Task 4");
             Console.WriteLine("Enter string on russin");
+            // Dont understand how can i combine 96 and 97 line
+            string fourthTaskString = Console.ReadLine();
+            Console.WriteLine($"String contain тест is {fourthTaskString.Contains("тест")}");
 
-            string FourthTaskString = Console.ReadLine();
-
-            if(FourthTaskString.Contains("тест"))
-            {
-                Console.WriteLine("String contain тест");
-            }
-            else
-            {
-                Console.WriteLine("String do not contain тест");
-            }
             Console.WriteLine("");
             
             //Fifth Task
             Console.WriteLine("Task 5");
-
             Console.WriteLine("Enter string Ru or En");
-            string firfhTaskString = Console.ReadLine();
+            string fifhTaskString = Console.ReadLine();
             string enString = "qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAPOIUYTREWQ";
             string ruString = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
 
-            if (enString.Contains(firfhTaskString[0]))
+            if (enString.Contains(fifhTaskString[0]))
             {
                 Console.WriteLine("Brest");
             }
-            else if (ruString.Contains(firfhTaskString[0]))
+            else if (ruString.Contains(fifhTaskString[0]))
             {
                 Console.WriteLine("Брест");
             }
@@ -124,15 +120,10 @@ namespace ConditionalConstructions
             Console.WriteLine("");
             
             //Sixth Task
-
             Console.WriteLine("Task 6");
             Console.WriteLine("Enter number ");
             int sixthTaskNumber = Convert.ToInt32(Console.ReadLine());
-
-            sixthTaskNumber = sixthTaskNumber % 8;
-
-            string answerSixthTask = sixthTaskNumber == 0 ? "correct" : "incorrect";
-            Console.WriteLine(answerSixthTask);
+            Console.WriteLine(sixthTaskNumber % 8 == 0 ? "correct" : "incorrect");
             Console.WriteLine("");
             
             // Second Exercise
@@ -145,8 +136,7 @@ namespace ConditionalConstructions
 
             for (int i = 0; i < 4; i++)
             {
-                int firstTaskSecNum = firstTaskNum % 10;
-                Console.Write(firstTaskSecNum);
+                Console.Write(firstTaskNum % 10);
                 firstTaskNum /= 10;
             }
             Console.WriteLine("");
@@ -165,21 +155,9 @@ namespace ConditionalConstructions
                 if (secondTaskSecNum == 7)
                 {
                     count++;
-                }
-                
+                }   
             }
-            if (count < 2)
-            {
-                Console.WriteLine("Less then two 7");
-            }
-            else if (count == 2)
-            {
-                Console.WriteLine("Two 7");
-            }
-            else if (count > 2)
-            {
-                Console.WriteLine("More then two 7");
-            }
+            Console.WriteLine($"Number have  two 7 is {count == 2}");
             Console.WriteLine("");
             
             //Third Task
@@ -187,39 +165,20 @@ namespace ConditionalConstructions
             Console.WriteLine("Enter xxxx number");
 
             int thirdTaskNum = Convert.ToInt32(Console.ReadLine());
-            int firstHalh = 0;
-            int secHalf = 0;
-            for (int i = 0; i < 2; i++)
-            {
-                int thirdTaskSecNum = thirdTaskNum % 100;
-                thirdTaskNum /= 100;
+            int firstNumberOfEnteredNumber = thirdTaskNum % 10;
+            thirdTaskNum /= 10;
+            int secondNumberOfEnteredNumber = thirdTaskNum % 10; ;
+            thirdTaskNum /= 10;
+            int thirdNumberOfEnteredNumber = thirdTaskNum % 10; ;
+            thirdTaskNum /= 10;
+            int fourthNumberOfEnteredNumber = thirdTaskNum;
 
-                int thirdTaskThirdNum = thirdTaskSecNum % 10;
-                thirdTaskSecNum /= 10;
-
-                if ( i == 0)
-                {
-                    firstHalh = thirdTaskThirdNum + thirdTaskSecNum;
-                }
-                else if ( i == 1)
-                {
-                    secHalf = thirdTaskThirdNum + thirdTaskSecNum;
-                }
-
-            }
-            if (firstHalh == secHalf)
-            {
-                Console.WriteLine("They are equal");
-            }
-            else
-            {
-                Console.WriteLine("They are not equal");
-            }
+            Console.WriteLine($"Sum of first two numbers equal to sum of two numbers is {firstNumberOfEnteredNumber + secondNumberOfEnteredNumber == thirdNumberOfEnteredNumber + fourthNumberOfEnteredNumber}");
             Console.WriteLine("");
-            
+            */
             // Third Exercise
-
             Console.WriteLine("Exercise 3");
+            // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter a x.xxxxx number ");
 
@@ -242,9 +201,8 @@ namespace ConditionalConstructions
                 }
             }
             
-
+            // Second Task
             Console.WriteLine("Task 2");
-
             Console.WriteLine("Enter a x.xxxx number ");
 
             double secondTaskDoudleNum = Convert.ToDouble(Console.ReadLine());
@@ -384,7 +342,7 @@ namespace ConditionalConstructions
             }
             Console.WriteLine($"{task1X}, {task1Y}, {task1Z}");
 
-
+            
         }
     }
 }
