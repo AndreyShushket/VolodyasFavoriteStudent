@@ -6,14 +6,12 @@ namespace ConditionalConstructions
     {
         static void Main(string[] args)
         {
-            
-           
+            /*
             Console.WriteLine("Exercise 1");
 
             // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter the number");
-
             try
             {
                 int firstTaskEnteredNumber = Convert.ToInt32(Console.ReadLine());
@@ -88,16 +86,14 @@ namespace ConditionalConstructions
             Console.WriteLine($"Expression a < b < c is {thirdTaskNumberA < thirdTaskNumberB && thirdTaskNumberB < thirdTaskNumberC}");
             Console.WriteLine($"Expression b > a > c is {thirdTaskNumberB > thirdTaskNumberA && thirdTaskNumberA > thirdTaskNumberC}");
             
-            
             //Fourth Task
             Console.WriteLine("Task 4");
             Console.WriteLine("Enter string on russian");
             // Dont understand how can i combine 96 and 97 line
             string russianTestEnteredString = Console.ReadLine();
             Console.WriteLine($"String contain тест is {russianTestEnteredString.Contains("тест")}");
-
             Console.WriteLine("");
-            
+            */
             //Fifth Task
             Console.WriteLine("Task 5");
             Console.WriteLine("Enter string Ru or En");
@@ -105,11 +101,11 @@ namespace ConditionalConstructions
             string enString = "qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAPOIUYTREWQ";
             string ruString = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
 
-            if (enString.Contains(fifhtTaskEnteredString[0]))
+            if (fifhtTaskEnteredString.Equals("En"))
             {
                 Console.WriteLine("Brest");
             }
-            else if (ruString.Contains(fifhtTaskEnteredString[0]))
+            else if (fifhtTaskEnteredString.Equals("Ru"))
             {
                 Console.WriteLine("Брест");
             }
@@ -118,7 +114,7 @@ namespace ConditionalConstructions
                 Console.WriteLine("Unknown symbols");
             }
             Console.WriteLine("");
-            
+            /*
             //Sixth Task
             Console.WriteLine("Task 6");
             Console.WriteLine("Enter number ");
@@ -131,7 +127,6 @@ namespace ConditionalConstructions
             // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter xxxx number");
-
             int enteredNumberWithFourDigits = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < 4; i++)
@@ -151,7 +146,6 @@ namespace ConditionalConstructions
             {
                 int secondTaskSecondNumber = secondTaskNumer % 10;
                 secondTaskNumer /= 10;
-
                 if (secondTaskSecondNumber == 7)
                 {
                     count++;
@@ -163,7 +157,6 @@ namespace ConditionalConstructions
             //Third Task
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter xxxx number");
-
             int thirdTaskNumber = Convert.ToInt32(Console.ReadLine());
             int firstNumberOfEnteredNumber = thirdTaskNumber % 10;
             thirdTaskNumber /= 10;
@@ -181,7 +174,6 @@ namespace ConditionalConstructions
             // First Task
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter a x.xxxxx number ");
-
             double firstTaskDoudleNumber = Convert.ToDouble(Console.ReadLine());
             firstTaskDoudleNumber = firstTaskDoudleNumber / 0.00001;
             firstTaskDoudleNumber = firstTaskDoudleNumber % 100000;
@@ -200,7 +192,8 @@ namespace ConditionalConstructions
                     Console.WriteLine("dont have 0");
                 }
             }
-            
+            Console.WriteLine("");
+
             // Second Task
             Console.WriteLine("Task 2");
             Console.WriteLine("Enter a x.xxxx number ");
@@ -229,7 +222,6 @@ namespace ConditionalConstructions
             Console.WriteLine("Task 3");
             Console.WriteLine("Enter a x.xxxx number ");
             double thirdTaskDoudleNumber = Convert.ToDouble(Console.ReadLine());
-
             thirdTaskDoudleNumber = thirdTaskDoudleNumber / 0.0001;
             thirdTaskDoudleNumber = thirdTaskDoudleNumber % 10000;
 
@@ -260,7 +252,6 @@ namespace ConditionalConstructions
             Console.WriteLine("Task 1");
             Console.WriteLine("Enter year number");
             int year = Convert.ToInt32(Console.ReadLine());
-
             Console.WriteLine($"This leap year is {year % 4 == 0}");
             Console.WriteLine("");
 
@@ -325,9 +316,8 @@ namespace ConditionalConstructions
                 task1X = task1Y;
                 task1Y = per;
             }
-            Console.WriteLine($"{task1X}, {task1Y}, {task1Z}");
-
-            
+            Console.WriteLine($"{task1X}, {task1Y}, {task1Z}"); 
+            */
         }
     }
 }
