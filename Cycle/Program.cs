@@ -24,8 +24,7 @@ namespace Cycle
             
             // Second Task
             Console.WriteLine("Task 2");
-            int j = 0;
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0, j = 0; i <= 10; i++)
             {
                 Console.WriteLine(j = i + j);
             }
