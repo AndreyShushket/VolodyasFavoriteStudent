@@ -31,10 +31,10 @@ namespace Cycle
             Console.WriteLine("");
 
             int secondTaskWhileI = 0;
-            j = 0;
+            int j1 = 0;
             while( secondTaskWhileI <= 10)
             {
-                Console.WriteLine(j = j + secondTaskWhileI);
+                Console.WriteLine(j1 = j1 + secondTaskWhileI);
                 secondTaskWhileI++;
             }
             Console.WriteLine("");
