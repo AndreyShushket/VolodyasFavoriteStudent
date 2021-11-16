@@ -26,7 +26,8 @@ namespace Array
                     count++;
                 }
             }
-            Console.WriteLine(count);
+            double per = (double)count / ((double)stringThatConvertintoChar.Length / 100);
+            Console.WriteLine(per);
             Console.WriteLine("");
             
             // We can do it without array too 
@@ -179,7 +180,24 @@ namespace Array
             // Seventh Task
             Console.WriteLine("Task 7");
             string[] strangeWords = new string[3] {"abraacadaabra", "belLio", "whiite"};
+            foreach(string s in strangeWords)
+            {
+                s.ToLower();
+                for(int i = 0; i < s.Length - 1; i++)
+                {
+                    string str = "";
+                    if(s[i] == s[i + 1])
+                    {
+                      str = s.Remove(i, 1);
+                      Console.WriteLine(str);
+                    }
+                    //k++;
+                    //Console.WriteLine(s);
 
+                }
+                Console.WriteLine(s);
+            }
+            /*
             for(int i = 0; i < strangeWords.Length; i++)
             {
                 strangeWords[i] = strangeWords[i].ToLower();
@@ -192,7 +210,7 @@ namespace Array
                     k++;
                 }
                 Console.WriteLine(strangeWords[i]);
-            }
+            }*/
         }
     }
 }
