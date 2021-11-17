@@ -3,13 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks for my friend", "Tasks for my friend\Tasks for my friend.csproj", "{D2D79D52-17EF-4DCA-AC43-9B6E579AEEB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks for my friend", "Tasks for my friend\Tasks for my friend.csproj", "{D2D79D52-17EF-4DCA-AC43-9B6E579AEEB6}"
 EndProject
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalConstructions", "ConditionalConstructions\ConditionalConstructions.csproj", "{D9DE5916-F3D1-476F-AF89-C735D75A167C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConditionalConstructions", "ConditionalConstructions\ConditionalConstructions.csproj", "{D9DE5916-F3D1-476F-AF89-C735D75A167C}"
 EndProject
-=======
->>>>>>> 291b4dd65ac76ac7926b3718ee7c06746d0829a7
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methodoverloading", "ConsoleApp1\Methodoverloading.csproj", "{CD5CB11B-787F-45A9-94F1-9675912E3D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,13 +19,14 @@ Global
 		{D2D79D52-17EF-4DCA-AC43-9B6E579AEEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D79D52-17EF-4DCA-AC43-9B6E579AEEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D79D52-17EF-4DCA-AC43-9B6E579AEEB6}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{D9DE5916-F3D1-476F-AF89-C735D75A167C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D9DE5916-F3D1-476F-AF89-C735D75A167C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9DE5916-F3D1-476F-AF89-C735D75A167C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9DE5916-F3D1-476F-AF89-C735D75A167C}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> 291b4dd65ac76ac7926b3718ee7c06746d0829a7
+		{CD5CB11B-787F-45A9-94F1-9675912E3D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5CB11B-787F-45A9-94F1-9675912E3D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5CB11B-787F-45A9-94F1-9675912E3D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5CB11B-787F-45A9-94F1-9675912E3D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
