@@ -81,7 +81,8 @@ namespace nuggets
             Console.WriteLine("Task 12");
             Console.WriteLine("Enter time in format xx,yy");
             double time = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(DateTimeGreatings(time));
+            string geatings = DateTimeGreatings(time);
+            Console.WriteLine(geatings);
             Console.WriteLine();
 
             // Thirteenth Task
@@ -91,13 +92,17 @@ namespace nuggets
             GlueArrays(text, numberOfStrings);
 
         }
-        // Second task methods
+        
         public static void VasyaIntrodused() => Console.WriteLine("My name is Vasya");
+
         public static void KolyaIntrodused() => Console.WriteLine("My name is Kolya");
+
         // Third task method
         public static void SayMyName(string name) => Console.WriteLine($"My name is {name}");
+
         // Fourth task method
         public static void Introduction(string name, int age) => Console.WriteLine($"My name is {name} and i am {age} years old");
+
         // Fifth task method
         public static void SmartIntroduction(string name, int age)
         {
@@ -110,6 +115,7 @@ namespace nuggets
                 Console.WriteLine($"My name is {name} and i am {age} year old");
             }
         }
+
         // Sixth task method
         public static void SmarterThanFifthIntroduction(string name, int age)
         {
@@ -122,6 +128,7 @@ namespace nuggets
                 Console.WriteLine($"My name is {name} and i am {age} years old");
             }
         }
+
         // Seventh task method
         public static void ALotOfNames(int age, params string[] names)
         {
@@ -139,6 +146,7 @@ namespace nuggets
             }
             Console.Write($". And we are {age} years old");
         }
+
         // Eighth task method
         public static string [] TwoArrayInOne(string[] names, string[] surnames)
         {
@@ -155,6 +163,7 @@ namespace nuggets
             }
             return fullName;
         }
+
         // Ninth task methods
         public static bool CompareNumbers(int number)
         {
@@ -162,6 +171,7 @@ namespace nuggets
             int rnd = random.Next(1, 10);
             return number == rnd;
         }
+
         public static void Bet(string name, int bet)
         {
             if(bet > 10 || bet < 1)
@@ -187,6 +197,7 @@ namespace nuggets
                 }
             }
         }
+
         // Tenth task methods
         public static int BetModified(string name, int bet)
         {
@@ -214,6 +225,7 @@ namespace nuggets
             }
             return count;
         }
+
         public static void Bettors(params string[] bettors)
         {
             int number = 0;
@@ -240,31 +252,33 @@ namespace nuggets
             string[] winner = bettors[index].Split(" ");
             Console.WriteLine($"{winner[0]} wins with best result {number}");
         }
+
         // Eleventh rask method
         public static bool ShortVersionOfCompareNumbers(int number, Random rnd) => number == rnd.Next(0, 2);
+
         // Twelfth task method
         public static string DateTimeGreatings(double time)
         {
-            string vvv = "";
+            string greatings = "";
             if(time >= 22.00 && time <= 23.59 || time >= 00.00 && time < 05.00)
             {
-                vvv = "good night";
-                return vvv;
+                greatings = "good night";
             }
             else if(time >= 05.00 && time < 12.00)
             {
-                return "good morning";
+                greatings = "good morning";
             }
             else if(time >= 12.00 && time < 18.00)
             {
-                return "good afternoon";
+                greatings = "good afternoon";
             }
             else if(time >= 18.00 && time < 22.00)
             {
-                return "goood evening";
+                greatings = "goood evening";
             }
-            return vvv;
+            return greatings;
         }
+
         // Thirteenth task method
         public static void GlueArrays(string[] text, int[] numbers)
         {
