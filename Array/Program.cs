@@ -26,7 +26,9 @@ namespace Array
                     count++;
                 }
             }
+
             double per = (double)count / ((double)stringThatConvertintoChar.Length / 100);
+
             Console.WriteLine(per);
             Console.WriteLine("");
             
@@ -41,6 +43,7 @@ namespace Array
                     count++;
                 }
             }
+
             Console.WriteLine(count);
             Console.WriteLine("");
             
@@ -59,6 +62,7 @@ namespace Array
                     count = surnames[i].Length;
                 }
             }
+
             Console.WriteLine($"The longest surname is {longestSurname} with {count} symbols");
             Console.WriteLine("");
             
@@ -66,8 +70,10 @@ namespace Array
             Console.WriteLine("Task 3");
 
             Console.WriteLine("Write some text");
+
             string enteredString = Console.ReadLine();
             string[] wordsFromString = enteredString.Split(' ');
+
             Console.WriteLine(wordsFromString.Length);
             Console.WriteLine("");
             
@@ -77,6 +83,7 @@ namespace Array
             int countEven = 0;
             int countOdd = 0;
             int[] numbers = new int[11] {9, 286, 3, 44, 51, 66, 75, 8, 11, 140, 7};
+
             System.Array.Sort(numbers);
 
             foreach (int i in numbers)
@@ -107,10 +114,12 @@ namespace Array
                     cO++;
                 }
             }
+
             Console.WriteLine("");
             
             // Fifth Task
             Console.WriteLine("Task 5");
+
             int maxNumber = 0;
             int minNumber = numbers[0];
 
@@ -126,6 +135,7 @@ namespace Array
                     minNumber = numbers[i];
                 }
             }
+
             Console.WriteLine(maxNumber - minNumber);
             Console.WriteLine("");
 
@@ -168,6 +178,7 @@ namespace Array
                     randomArray[i, j] = randomSortArray[j];
                 }
             }
+
             for (int i = 0; i < rnd1; i++)
             {
                 for (int j = 0; j < rnd2; j++)
@@ -179,38 +190,24 @@ namespace Array
             
             // Seventh Task
             Console.WriteLine("Task 7");
-            string[] strangeWords = new string[3] {"abraacadaabra", "belLio", "whiite"};
-            foreach(string s in strangeWords)
-            {
-                s.ToLower();
-                for(int i = 0; i < s.Length - 1; i++)
-                {
-                    string str = "";
-                    if(s[i] == s[i + 1])
-                    {
-                      str = s.Remove(i, 1);
-                      Console.WriteLine(str);
-                    }
-                    //k++;
-                    //Console.WriteLine(s);
 
-                }
-                Console.WriteLine(s);
-            }
-            /*
-            for(int i = 0; i < strangeWords.Length; i++)
-            {
-                strangeWords[i] = strangeWords[i].ToLower();
-                for (int j = 1, k = 0; j < strangeWords[i].Length; j++)
+            string[] strangeWords = new string[3] {"abraacadaabra", "belLio", "whiite" };
+            count = 0;
+
+            foreach(string s in strangeWords)
+            {               
+                string str = s.ToLower();
+                for (int i = 0; i < str.Length - 1; i++)
                 {
-                    if (strangeWords[i][j] == strangeWords[i][k])
+                    if(str[i] == str[i + 1])
                     {
-                        strangeWords[i] = strangeWords[i].Remove(j, 1);
+                      str = str.Remove(i, 1);
+                        
                     }
-                    k++;
                 }
-                Console.WriteLine(strangeWords[i]);
-            }*/
+                strangeWords[count] = str;
+                count++;
+            }
         }
     }
 }
