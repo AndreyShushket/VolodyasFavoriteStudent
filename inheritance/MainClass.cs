@@ -20,7 +20,7 @@ namespace inheritance
             var trampcar = new Tramcar(77, "Horvar", 20, 13.13, 2);
             var trollebus = new Trolleybus(504, "Deadon", 44, 10.00);
             var metro = new Metro(4, "Kastri", 68, 02.12, 4);
-            /*
+            
             Transport[] transport = new Transport[] {secondBus, electricTrain, miniBus, electricBus, trampcar, trollebus, metro};
             Array.Sort(transport);
             double clientTime = Convert.ToDouble(Console.ReadLine());
@@ -30,18 +30,18 @@ namespace inheritance
             {
                 if(clientTime == o.FirstVoyage)
                 {
-                    //o.GetInfo();
+                    o.GetInfo();
                 }
 
                 if (clientDestination == o.Destination)
                 {
-                   //o.GetInfo();
+                   o.GetInfo();
                 }
 
                 if(clientTime < o.FirstVoyage)
                 {
                    o.GetInfo();
-                   //Console.WriteLine(o.GetTypeOfTransport());
+                   Console.WriteLine(o.GetTypeOfTransport());
                 }
             }
             
@@ -91,7 +91,7 @@ namespace inheritance
                     o.GetInfo();
                 }
             }
-            */
+            
 
         }
     }
