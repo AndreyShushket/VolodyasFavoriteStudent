@@ -8,9 +8,6 @@ namespace inheritance
 {
     class PassengerCar : Auto
     {
-        public PassengerCar(string model, int number, double speed, int liftingCapacity) : base(model, number, speed)
-        {
-            this.liftingCapacity = liftingCapacity;
-        }
+        public PassengerCar(string model, int number, double speed, int liftingCapacity) : base(model, number, speed) => this.liftingCapacity = liftingCapacity;
     }
 }

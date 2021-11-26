@@ -39,10 +39,7 @@ namespace inheritance
 
         public void GetInfo() => Console.WriteLine($"Model is {model}, number is {number},speed is {speed}, lifting capasity is {liftingCapacity}");
 
-        public int GetLiftCapasity(PassengerCar passengerCar)
-        {
-            return passengerCar.liftingCapacity;
-        }
+        public int GetLiftCapasity(PassengerCar passengerCar) => passengerCar.liftingCapacity;
 
         public int GetLiftCapasity(Truck truck)
         {

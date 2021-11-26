@@ -28,20 +28,14 @@ namespace inheritance
 
             foreach (Transport o in transport)
             {
-                if(clientTime == o.FirstVoyage)
+                if(clientTime == o.FirstVoyage || clientDestination == o.Destination)
                 {
                     o.GetInfo();
                 }
-
-                if (clientDestination == o.Destination)
-                {
-                   o.GetInfo();
-                }
-
                 if(clientTime < o.FirstVoyage)
                 {
                    o.GetInfo();
-                   Console.WriteLine(o.GetTypeOfTransport());
+                   Console.WriteLine(o.GetTypeOfTransport(o));
                 }
             }
             
@@ -64,7 +58,7 @@ namespace inheritance
             var motobikeBig = new Motorbike("Sike", 1297, 60.0, 5, true);
             var motobikeSmall = new Motorbike("Trik", 7854, 50.0, 5, false);
 
-            object[] cars = new object[] { passengersCar, passengersCarBig, passengersCarSmall, truck, truckBig, truckSmall, motobike, motobikeBig, motobikeSmall};
+            Auto[] cars = new Auto[] { passengersCar, passengersCarBig, passengersCarSmall, truck, truckBig, truckSmall, motobike, motobikeBig, motobikeSmall};
             int clientWeightNeeded = Convert.ToInt32(Console.ReadLine());
             foreach (Auto o in cars)
             {
@@ -91,8 +85,6 @@ namespace inheritance
                     o.GetInfo();
                 }
             }
-            
-
         }
     }
 }

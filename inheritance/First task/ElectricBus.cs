@@ -17,9 +17,5 @@ namespace inheritance
         {
 
         }
-        public static void GetFkcd()
-        {
-
-        }
     }
 }

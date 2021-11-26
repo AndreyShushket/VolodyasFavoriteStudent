@@ -81,7 +81,6 @@ namespace inheritance
 
         }
 
-        //public static void GetFkcd() => Console.WriteLine("Method GetFkcd");
         public int CompareTo(Transport transport) => this.numberOfSeats.CompareTo(transport.numberOfSeats);
         public void GetInfo() => Console.WriteLine($" Number of transport is {NumberOFTransport}, destination is {Destination}, number of seats is {NumberOfSeats}, first voyage is {FirstVoyage}");
     }

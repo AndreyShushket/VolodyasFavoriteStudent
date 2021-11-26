@@ -12,10 +12,7 @@ namespace inheritance
         {
 
         }
-    }
-    
-    public void GetInfo()
-    {
-        Console.WriteLine("daf");
+
+        public void GetInfo() => Console.WriteLine("daf");
     }
 }
