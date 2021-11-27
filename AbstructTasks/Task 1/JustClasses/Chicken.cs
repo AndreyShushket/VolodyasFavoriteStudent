@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace AbstructTasks
 {
-    class Chicken : Bird
+    class Chicken : Bird, IFly
     {
         public Chicken() : base("hicken")
         {
 
         }
 
-        public override void Fly(Bird bird)
+        public void Fly()
         {
-            base.Fly(bird);
+            Console.WriteLine("Chicken is flying");
             Console.WriteLine("but not far");
         }
     }

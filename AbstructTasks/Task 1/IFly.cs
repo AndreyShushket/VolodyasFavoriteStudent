@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace AbstructTasks
 {
-    class Parrot : Bird, IFly
+    interface IFly
     {
-        public Parrot() : base("parrot")
-        {
-
-        }
-        public void Fly() => Console.WriteLine("Parrot is flying");
+        void Fly();   
     }
 }

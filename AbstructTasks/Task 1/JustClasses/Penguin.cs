@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstructTasks
 {
-    class Penguin : Bird, ISwimable
+    class Penguin : Bird, ISwimable, IFly
     {
         public Penguin() : base("penguin")
         {
@@ -15,6 +15,6 @@ namespace AbstructTasks
 
         public void Swim() => Console.WriteLine("Penguin is swimming");
 
-        public override void Fly(Bird bird) => Console.WriteLine("penguin cannot fly");
+        public void Fly() => Console.WriteLine("penguin cannot fly");
     }
 }
