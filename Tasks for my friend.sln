@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class Homework", "Class Hom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion2", "Recursion2\Recursion2.csproj", "{21D7E5BF-BABD-41BF-A991-18CA36A2E1BB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{350153BB-580B-4252-91A3-1D8B668C4F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstructTasks", "AbstructTasks\AbstructTasks.csproj", "{FFC7A127-0B52-4C9A-8083-64B43D326647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,10 @@ Global
 		{21D7E5BF-BABD-41BF-A991-18CA36A2E1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21D7E5BF-BABD-41BF-A991-18CA36A2E1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21D7E5BF-BABD-41BF-A991-18CA36A2E1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC7A127-0B52-4C9A-8083-64B43D326647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC7A127-0B52-4C9A-8083-64B43D326647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC7A127-0B52-4C9A-8083-64B43D326647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC7A127-0B52-4C9A-8083-64B43D326647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
