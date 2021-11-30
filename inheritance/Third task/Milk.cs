@@ -13,6 +13,9 @@ namespace inheritance
 
         }
 
-        public void GetInfo() => Console.WriteLine("daf");
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Name {name}, price {price}, made date {madeDate.ToLongDateString()}, date of the end {dateOfTheEnd.ToLongDateString()}");
+        }
     }
 }

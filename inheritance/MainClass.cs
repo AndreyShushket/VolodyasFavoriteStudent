@@ -9,7 +9,7 @@ namespace inheritance
     class MainClass
     {
         static void Main(string[] args)
-        {
+        {/*
             var bus = new Bus("Minsk", 107, "13:30", 60);
             bus.GetInfo();
 
@@ -84,7 +84,39 @@ namespace inheritance
                 {
                     o.GetInfo();
                 }
-            }
+            }*/
+            DateTime dateStart = new DateTime(2019, 03, 15);
+            DateTime dateEnd = new DateTime(2020, 03, 15);
+            Milk milk = new Milk("Milk", 123.4, dateStart, dateEnd);
+            milk.GetInfo();
+            milk.GetFrash();
+
+            DateTime dateStart1 = new DateTime(2019, 03, 15);
+            DateTime dateEnd1 = new DateTime(2021, 03, 15);
+
+            Milk milk1 = new Milk("Milk1", 123.4, dateStart1, dateEnd1);
+            Batch batch = new Batch(milk1, 50, dateStart1, dateEnd1);
+            batch.GetFrash();
+            batch.GetInfo();
+
+            DateTime dateStart2 = new DateTime(2019, 03, 15);
+            DateTime dateEnd2 = new DateTime(2022, 03, 15);
+
+            Milk milk2 = new Milk("Milk2", 143.4, dateStart2, dateEnd2);
+            Milk milk3 = new Milk("Milk3", 128.4, dateStart2, dateEnd2);
+
+            DateTime dateStart3 = new DateTime(2019, 03, 15);
+            DateTime dateEnd3 = new DateTime(2019, 04, 15);
+
+            Milk milk4 = new Milk("Milk4", 1223.4, dateStart3, dateEnd3);
+            Milk milk5 = new Milk("Milk5", 153.4, dateStart3, dateEnd3);
+            Milk milk6 = new Milk("Milk6", 193.4, dateStart3, dateEnd3);
+
+            Set set = new Set("Milk party", milk2, milk3, milk4, milk5, milk6);
+
+            set.GetFrash();
+            set.GetInfo();
+
         }
     }
 }
