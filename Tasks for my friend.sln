@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion2", "Recursion2\Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstructTasks", "AbstructTasks\AbstructTasks.csproj", "{FFC7A127-0B52-4C9A-8083-64B43D326647}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{350153BB-580B-4252-91A3-1D8B668C4F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "inheritance", "inheritance\inheritance.csproj", "{8A06BAC0-4C07-41EB-B8F1-3A896E5FDA5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance", "inheritance\inheritance.csproj", "{8A06BAC0-4C07-41EB-B8F1-3A896E5FDA5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeptionTask", "ExeptionTask\ExeptionTask.csproj", "{2FC02D44-871C-4E07-AB89-5D64C2BB35AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +89,10 @@ Global
 		{8A06BAC0-4C07-41EB-B8F1-3A896E5FDA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A06BAC0-4C07-41EB-B8F1-3A896E5FDA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A06BAC0-4C07-41EB-B8F1-3A896E5FDA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC02D44-871C-4E07-AB89-5D64C2BB35AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC02D44-871C-4E07-AB89-5D64C2BB35AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC02D44-871C-4E07-AB89-5D64C2BB35AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC02D44-871C-4E07-AB89-5D64C2BB35AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
