@@ -9,7 +9,7 @@ namespace inheritance
     class MainClass
     {
         static void Main(string[] args)
-        {/*
+        {
             var bus = new Bus("Minsk", 107, "13:30", 60);
             bus.GetInfo();
 
@@ -84,7 +84,8 @@ namespace inheritance
                 {
                     o.GetInfo();
                 }
-            }*/
+            }
+
             DateTime dateStart = new DateTime(2019, 03, 15);
             DateTime dateEnd = new DateTime(2020, 03, 15);
             Milk milk = new Milk("Milk", 123.4, dateStart, dateEnd);
