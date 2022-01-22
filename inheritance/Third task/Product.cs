@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace inheritance
 {
-    class Product
+    abstract class Product
     {
         public string name { get; set; }
 
@@ -24,17 +24,20 @@ namespace inheritance
             this.dateOfTheEnd = dateOfTheEnd;
         }
 
-        public Product(string name, double price)
+        public Product(DateTime madeDate, DateTime dateOfTheEnd)
         {
             this.name = name;
-            this.price = price;
+            this.madeDate = madeDate;
+            this.dateOfTheEnd = dateOfTheEnd;
         }
 
-        public void GetInfo() => Console.WriteLine($"Name is {name}, price is {price}, date of manufacture is {madeDate}, expiration date is {dateOfTheEnd}");
+        public Product(string name) => this.name = name;
 
-        public void GetFrash(Product product)
+        public virtual void GetInfo() => Console.WriteLine($"Name is {name}, price is {price}, date of manufacture is {madeDate}, expiration date is {dateOfTheEnd}");
+
+        public virtual void GetFrash()
         {
-            if(product.dateOfTheEnd > DateTime.Today)
+            if(dateOfTheEnd > DateTime.Today)
             {
                 Console.WriteLine("Product is fresh");
             }
